@@ -1,0 +1,7 @@
+/* Label styling */
+.label {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 5px 0;
+}

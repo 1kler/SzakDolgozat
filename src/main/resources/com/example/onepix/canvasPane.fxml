@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@anchorpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepix.CanvasPane">
+   <children>
+      <ToolBar prefHeight="61.0" prefWidth="1920.0" style="-fx-background-color: #2c3e50; -fx-padding: 10px; -fx-border-color: #34495e; -fx-border-width: 0 0 1 0;">
+        <items>
+            <ColorPicker fx:id="colorPicker">
+               <value>
+                  <Color />
+               </value></ColorPicker>
+            <Button fx:id="saveButton" mnemonicParsing="false" stylesheets="@button.css" text="Save" />
+            <Button fx:id="loadButton" mnemonicParsing="false" stylesheets="@button.css" text="Load" />
+            <Button fx:id="undoButton" mnemonicParsing="false" stylesheets="@button.css" text="Undo" />
+            <ToolBar prefHeight="40.0" prefWidth="265.0">
+              <items>
+                <Button fx:id="pencilButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="Pencil" />
+                  <Button fx:id="fillButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Fill/Bucket" />
+                  <Button fx:id="eraserButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Eraser" />
+                  <Button fx:id="zoomButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Zoom" />
+              </items>
+            </ToolBar>
+            <Slider fx:id="pixelSizeSlider" prefWidth="200.0" />
+            <Label fx:id="sliderValueLabel" alignment="CENTER" prefHeight="23.0" prefWidth="26.0" text="1" textFill="#44abc2">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

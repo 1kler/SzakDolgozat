@@ -1,0 +1,25 @@
+.button {
+    -fx-background-color: #34495e;
+    -fx-text-fill: #ecf0f1;
+    -fx-padding: 10px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+    -fx-effect: none;
+    -fx-pref-width: 80px;
+    -fx-pref-height: 40px;
+    -fx-margin: 0 5px;
+}
+
+.button:hover {
+    -fx-background-color: #3b5771;
+}
+
+.button:pressed {
+    -fx-background-color: #1abc9c;
+}
+
+.button:disabled {
+    -fx-background-color: #95a5a6;
+    -fx-cursor: default;
+}

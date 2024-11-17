@@ -1,0 +1,9 @@
+.anchor-pane-centered {
+    -fx-alignment: center;
+}
+
+.inner-anchor-pane {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+}

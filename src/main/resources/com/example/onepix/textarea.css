@@ -1,0 +1,46 @@
+/* General TextArea styling */
+.text-area {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-control-inner-background: #f5f5f5;
+}
+
+.text-area:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+}
+
+.text-area:disabled {
+    -fx-background-color: #eeeeee;
+    -fx-text-fill: #999999;
+}
+
+/* Placeholder text (prompt text) styling */
+.text-area .text {
+    -fx-fill: #999999;
+}
+
+/* Caret color */
+.text-area .caret {
+    -fx-stroke: #333333;
+}
+
+/* Selection color */
+.text-area .selection {
+    -fx-background-color: #3498db;
+}
+
+/* Responsive TextArea for smaller screens */
+@media screen and (max-width: 768px) {
+    .text-area {
+        -fx-font-size: 12px;
+    }
+}
